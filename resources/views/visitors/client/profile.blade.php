@@ -16,7 +16,7 @@
     <!-- fancy box  -->
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.min.css') }}">
     <!-- custom css  -->
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <link rel="stylesheet" href="{{ asset('res/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styleB.css') }}">

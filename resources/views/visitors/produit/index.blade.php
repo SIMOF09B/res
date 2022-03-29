@@ -16,7 +16,7 @@
     <!-- fancy box  -->
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.min.css') }}">
     <!-- custom css  -->
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <link rel="stylesheet" href="{{ asset('res/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styleB.css') }}">
@@ -58,8 +58,8 @@
                                     <i class = "fas fa-shopping-cart"></i>
                                     <span id = "cart-count-info"></span>
                                   </button>
-
-                                  <div class = "cart-container">
+{{-- ======================================<command>============================================= --}}
+                                <div class = "cart-container">
                                     <div class = "cart-list">
                                         <div class="card mt-3" style="background:#00a08300">
                                             <div class="card-header" style="background:#00a082;">
@@ -67,8 +67,6 @@
                                             </div>
                                             <div class="card-body" id="panel" >
                                                @foreach(Auth::user()->client->produit as $prod_client)
-
-
                                                          {{-- ======================= --}}
                                                          <div class="card mb-3" style="background: #ffffff">
                                                             <div class="row g-0">
@@ -88,14 +86,12 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class = "cart-total">
-
                                       <span id = "cart-total-value"></span>
                                     </div>
                                   </div>
                                 </div>
-
+{{-- ------------------------------------------------------------------------------------- --}}
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <!-- Left Side Of Navbar -->
                                     <ul class="menu food-nav-menu">

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- bootstrap  -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- for swiper slider  -->
     <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
 
