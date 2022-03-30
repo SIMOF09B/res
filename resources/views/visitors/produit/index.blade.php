@@ -58,16 +58,16 @@
                                     <i class = "fas fa-shopping-cart"></i>
                                     <span id = "cart-count-info"></span>
                                   </button>
-{{-- ======================================<command>============================================= --}}
+{{-- ==================================================command============================================= --}}
                                 <div class = "cart-container">
                                     <div class = "cart-list">
                                         <div class="card mt-3" style="background:#00a08300">
                                             <div class="card-header" style="background:#00a082;">
                                                 <h5 class="text-light">Commandes Lits</h5>
                                             </div>
-                                            <div class="card-body" id="panel" >
-                                               @foreach(Auth::user()->client->produit as $prod_client)
-                                                         {{-- ======================= --}}
+                                              <div class="card-body" id="panel" >
+                                                   @foreach(Auth::user()->client->produit as $prod_client)
+                                                     {{-- ======================= --}}
                                                          <div class="card mb-3" style="background: #ffffff">
                                                             <div class="row g-0">
                                                               <div class="col-md-4">

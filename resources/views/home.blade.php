@@ -43,7 +43,9 @@
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="{{ route('list') }}">restaurants</a></li>
-                                <li><a href="#footer">Contact</a></li>
+                                @auth
+                                <li><a href="{{route('authc.order')}}">Orders</a></li>
+                                @endauth
 
                             </ul>
 
@@ -65,21 +67,10 @@
                                             <div class="card-header" style="background:#00a082;">
                                                 <h5 class="text-light">Commandes Lits</h5>
                                             </div>
-                                            <div class="card-body" id="panel" >
-                                                @foreach(Auth::user()->client->produit as $prod_client)
-                                                <div style="display: flex; padding-bottom: 10px">
-                                                   <div style="text-align: center">
-                                                    <p style="color: rgb(255, 255, 255)">{{$prod_client->name}} </p>
-                                                       </div>
-                                                       <div style="padding-left: 60% " >
-                                                        <img src="{{asset('products/'.$prod_client->image)}}" width="60%" height="60%" alt="...">
-                                                       </div>
-                                                         </div>
-                                               @endforeach
-                                            </div>
-                                        </div>
-                                    </div>
+                                            
 
+                                    </div>
+                                    </div>
                                     <div class = "cart-total">
                                       <h3>Total: $</h3>
                                       <span id = "cart-total-value"></span>

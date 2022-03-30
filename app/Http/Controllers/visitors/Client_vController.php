@@ -50,4 +50,12 @@ class Client_vController extends Controller
             ]);
         return redirect()->back()->with('success', 'bien modifier !!');
     }
+
+    public function order()
+    {
+        $commandes = Auth::user()->client->commande;
+        return view('visitors.client.orders',[
+            'commandes' => $commandes
+        ]);
+    }
 }

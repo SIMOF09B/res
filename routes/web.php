@@ -107,6 +107,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [Client_vController::class, 'index'])->name('show');
         Route::get('/update', [Client_vController::class, 'update'])->name('update');
         Route::post('edit', [Client_vController::class, 'edit'])->name('edit');
+        Route::get('orders', [Client_vController::class, 'order'])->name('order');
     });
 
     Route::get('/rest', [restaurant_vController::class, 'index'])->name('list');
